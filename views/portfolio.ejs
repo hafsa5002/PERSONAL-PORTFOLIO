@@ -1,12 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/output.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hafsa Portfolio</title>
+  <link rel="stylesheet" href="/css/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Fira Code', monospace; }
+    /* Cursor blink effect */
+    .cursor-blink { animation: blink 1s step-start infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
 </head>
-<body>
-    <h1 class="bg-red-400">hello</h1>
+<body class="bg-[#0f172a] text-gray-200">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-[#2dd4bf]/30">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between py-4">
+      <div class="text-[#2dd4bf] font-bold text-xl">{ LOGO }</div>
+      
+      <!-- Desktop menu -->
+      <ul class="hidden md:flex space-x-8 font-semibold text-[#2dd4bf] tracking-wide text-lg">
+        <li><a href="#about" class="relative group">ABOUT<span class="absolute opacity-0 group-hover:opacity-100 ml-1 text-[#2dd4bf] cursor-blink">█</span></a></li>
+        <li><a href="#skills" class="relative group">&lt; SKILLS /&gt;</a></li>
+        <li><a href="#projects" class="hover:text-white hover:drop-shadow-[0_0_10px_#2dd4bf] transition">PROJECTS</a></li>
+        <li><a href="#contact" class="relative group">CONTACT<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#2dd4bf] transition-all duration-300 group-hover:w-full"></span></a></li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-[#2dd4bf] text-2xl">☰</button>
+    </div>
+
+    <!-- Mobile menu dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 text-center py-4 bg-[#111827]">
+      <a href="#about" class="hover:text-white">ABOUT █</a>
+      <a href="#skills" class="hover:text-white">&lt; SKILLS /&gt;</a>
+      <a href="#projects" class="hover:text-white">PROJECTS</a>
+      <a href="#contact" class="hover:text-white">CONTACT _</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex flex-col md:flex-row justify-evenly items-center min-h-screen px-6 md:px-12 lg:px-20">
+    <!-- Logo -->
+    <div class="logo relative h-32 w-32 sm:h-48 sm:w-48 md:h-64 md:w-64 mb-8 md:mb-0">
+      <div class="absolute inset-0 rounded-full bg-[#2dd4bf] blur-2xl opacity-30 animate-pulse"></div>
+      <div class="relative rounded-full bg-[#0f172a] border-4 border-[#2dd4bf] h-full w-full flex items-center justify-center text-[#2dd4bf] font-bold text-lg shadow-xl">
+        { LOGO }
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 justify-center text-center md:text-left">
+      <div class="text-base sm:text-lg text-[#2dd4bf]">> Hi, my name is</div>
+      <div class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white">HAFSA</div>
+      <div class="text-lg sm:text-2xl md:text-3xl font-bold text-[#2dd4bf]">Web Developer & Builder of Things</div>
+      <p class="text-gray-400 leading-relaxed text-sm sm:text-base md:text-lg border-l-2 border-[#2dd4bf] pl-4">
+        I create modern, responsive, and user-friendly web applications using 
+        the latest technologies. Passionate about building seamless user 
+        experiences and scalable backend systems.
+      </p>
+     <a href="#projects" 
+   class="mt-4 inline-block px-6 py-3 rounded-lg bg-[#2dd4bf] text-black font-bold hover:bg-[#14b8a6] hover:shadow-[0_0_10px_#2dd4bf] transition relative group">
+  $ view_projects
+  <span class="absolute opacity-0 group-hover:opacity-100 ml-1 animate-pulse">█</span>
+</a>
+
+
+    </div>
+  </main>
+<!-- About -->
+<section id="about" class="min-h-screen flex items-center justify-center px-6 sm:px-10 lg:px-20 bg-[#111827]">
+  <div class="max-w-5xl w-full">
+    <!-- Heading -->
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#2dd4bf] mb-6 text-center md:text-left">
+      ~/about
+    </h2>
+
+    <!-- Content -->
+    <p class="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl space-y-4">
+      Hello, I’m <span class="text-[#2dd4bf] font-semibold">Hafsa</span> — a passionate 
+      <span class="text-[#2dd4bf] font-semibold">Full-Stack Web Developer</span> who thrives on building 
+      modern, responsive, and scalable web applications.
+      <br><br>
+      On the <span class="text-[#2dd4bf]">frontend</span>, I craft clean and engaging user interfaces with 
+      <span class="text-[#2dd4bf]">HTML, CSS, JavaScript, and Tailwind CSS</span>.
+      <br>
+      On the <span class="text-[#2dd4bf]">backend</span>, I engineer efficient systems using 
+      <span class="text-[#2dd4bf]">Node.js, Express.js, and MongoDB</span>, ensuring performance, security, 
+      and scalability.
+      <br><br>
+      I have strong expertise in <span class="text-[#2dd4bf]">version control (Git & GitHub)</span>, 
+      the <span class="text-[#2dd4bf]">NPM ecosystem</span>, and smooth <span class="text-[#2dd4bf]">deployment workflows</span>, 
+      allowing me to deliver maintainable code and production-ready applications.
+      <br><br>
+      Driven by <span class="text-[#2dd4bf]">problem-solving</span> and a love for clean code, 
+      I turn complex ideas into practical, real-world solutions — with a strong focus on 
+      <span class="text-[#2dd4bf]">responsiveness, usability, and performance</span>.
+      <br><br>
+      <span class="text-[#2dd4bf]">[ mission ]</span> → Build impactful digital experiences that look great, 
+      work flawlessly, and scale with growth.
+    </p>
+  </div>
+</section>
+
+
+<!-- Skills -->
+<!-- Skills -->
+<section id="skills" class="min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 bg-[#0f172a]">
+  <h2 class="text-2xl sm:text-3xl font-bold text-[#2dd4bf] mb-8">~/skills</h2>
+  
+  <div class="flex flex-col md:flex-row gap-8 w-full max-w-6xl">
+    
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 flex-1 text-center">
+      
+      <!-- Frontend -->
+      <div onclick="showSkill('html')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-html5-plain colored text-4xl"></i>
+        <p class="mt-2">HTML</p>
+      </div>
+      <div onclick="showSkill('css')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-css3-plain colored text-4xl"></i>
+        <p class="mt-2">CSS / Tailwind</p>
+      </div>
+      <div onclick="showSkill('js')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-javascript-plain colored text-4xl"></i>
+        <p class="mt-2">JavaScript</p>
+      </div>
+
+      <!-- Backend -->
+      <div onclick="showSkill('node')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-nodejs-plain colored text-4xl"></i>
+        <p class="mt-2">Node.js</p>
+      </div>
+      <div onclick="showSkill('express')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-express-original text-4xl text-gray-300"></i>
+        <p class="mt-2">Express.js</p>
+      </div>
+      <div onclick="showSkill('mongodb')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-mongodb-plain colored text-4xl"></i>
+        <p class="mt-2">MongoDB</p>
+      </div>
+
+      <!-- Tools -->
+      <div onclick="showSkill('git')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-git-plain colored text-4xl"></i>
+        <p class="mt-2">Git / GitHub</p>
+      </div>
+      <div onclick="showSkill('deploy')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-npm-original-wordmark text-4xl text-red-500"></i>
+        <p class="mt-2">Deployment</p>
+      </div>
+      <div onclick="showSkill('responsive')" class="p-4 border border-[#2dd4bf]/30 rounded-md hover:border-[#2dd4bf] transition cursor-pointer">
+        <i class="devicon-tailwindcss-plain colored text-4xl"></i>
+        <p class="mt-2">Responsive Design</p>
+      </div>
+      
+    </div>
+
+    <!-- Skill Details -->
+    <div id="skillDetails" class="flex-1 bg-[#1e293b] border border-[#2dd4bf]/30 rounded-lg p-6 text-gray-300 hidden md:block transition-all duration-300 ease-in-out">
+      <pre class="text-sm sm:text-base md:text-lg whitespace-pre-wrap"><code id="skillText">// Click on a skill to learn more</code></pre>
+    </div>
+  </div>
+</section>
+
+<script>
+  const skills = {
+    html: `const skill = "HTML"; 
+// Expertise in writing semantic, accessible markup.
+// Ability to structure websites with SEO-friendly best practices.
+// Skilled in forms, tables, and cross-browser compatibility.`,
+    
+    css: `const skill = "CSS & TailwindCSS";
+// Advanced styling, animations, and grid/flex layouts.
+// TailwindCSS for rapid UI prototyping and modern responsive design.
+// Pixel-perfect implementation from Figma/Adobe XD designs.`,
+    
+    js: `const skill = "JavaScript";
+// Writing clean ES6+ code with modular structure.
+// DOM manipulation, event handling, and API integration.
+// Strong foundation in asynchronous programming and promises.`,
+    
+    node: `const skill = "Node.js";
+// Building scalable backend applications with REST APIs.
+// Handling middleware, authentication, and data flow.
+// Experience with real-time features using WebSockets.`,
+    
+    express: `const skill = "Express.js";
+// Creating secure, lightweight, and maintainable server-side routes.
+// RESTful API design following industry standards.
+// Middleware handling for authentication and logging.`,
+    
+    mongodb: `const skill = "MongoDB";
+// Schema design for flexible and scalable NoSQL databases.
+// CRUD operations, aggregation pipelines, and indexing.
+// Connecting backends with Mongoose for smooth data modeling.`,
+    
+    git: `const skill = "Git & GitHub";
+// Version control with branching strategies (Git Flow).
+// Managing collaborative workflows with pull requests.
+// Comfortable with CLI commands and resolving merge conflicts.`,
+    
+    deploy: `const skill = "Deployment";
+// Experience with cloud platforms and CI/CD pipelines.
+// Deploying apps on Render, Vercel, and Heroku.
+// Configuring environment variables & production builds.`,
+    
+    responsive: `const skill = "Responsive Design";
+// Mobile-first design principles for all screen sizes.
+// Ensuring cross-browser & cross-device compatibility.
+// Creating adaptive layouts for accessibility and UX.`
+  };
+
+  function showSkill(skill) {
+    const textBox = document.getElementById('skillText');
+    textBox.innerText = skills[skill];
+    document.getElementById('skillDetails').classList.remove("hidden");
+  }
+</script>
+
+<!-- Devicon icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+  <!-- Projects -->
+<!-- Projects -->
+<section id="projects" class="min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 bg-[#111827]">
+  <h2 class="text-2xl sm:text-3xl font-bold text-[#2dd4bf] mb-8">~/projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-6 w-full max-w-5xl">
+
+    <!-- Pinterest Clone -->
+    <a href="https://pinterest-clone-h1z4.onrender.com" target="_blank" 
+       class="bg-[#0f172a] border border-[#2dd4bf]/30 p-6 rounded-lg hover:border-[#2dd4bf] hover:shadow-[0_0_12px_#2dd4bf] transition block">
+      <h3 class="text-xl font-bold text-[#2dd4bf] mb-2">$ pinterest_clone</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        A <span class="text-[#2dd4bf]">full-stack</span> real-time image-sharing app inspired by Pinterest.  
+        Built with <span class="text-[#2dd4bf]">HTML, Tailwind CSS, JavaScript, Node.js, Express.js, MongoDB</span>, and version control using <span class="text-[#2dd4bf]">Git/GitHub</span>.  
+        Features include user authentication, responsive design, smooth UI, and scalable backend.  
+        Deployed for seamless online access.
+      </p>
+    </a>
+
+    <!-- Promotional Website -->
+    <a href="https://noble-finances-a-promotional-webiste.onrender.com" target="_blank" 
+       class="bg-[#0f172a] border border-[#2dd4bf]/30 p-6 rounded-lg hover:border-[#2dd4bf] hover:shadow-[0_0_12px_#2dd4bf] transition block">
+      <h3 class="text-xl font-bold text-[#2dd4bf] mb-2">$ promotional_site</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        A <span class="text-[#2dd4bf]">modern, responsive promotional website</span> showcasing clean UI and smooth user experience.  
+        Designed with <span class="text-[#2dd4bf]">HTML, Tailwind CSS, and JavaScript</span> to highlight products and services in a visually appealing way.  
+        Fully mobile-friendly with performance optimization for fast loading and accessibility.
+      </p>
+    </a>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+ <!-- Contact -->
+<section id="contact" class="min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 bg-[#0f172a]">
+  <h2 class="text-2xl sm:text-3xl font-bold text-[#2dd4bf] mb-6">~/contact</h2>
+  <p class="text-gray-400 mb-6 text-center">Let’s connect! Fill out the form or reach me via GitHub.</p>
+
+  <!-- Contact Form -->
+  <form id="contactForm" action="https://formspree.io/f/yourFormID" method="POST" 
+        class="w-full max-w-xl bg-[#111827] border border-[#2dd4bf]/30 p-6 rounded-lg shadow-lg">
+    
+    <label class="block mb-4">
+      <span class="text-[#2dd4bf] font-mono">$ name</span>
+      <input type="text" name="name" required 
+             class="w-full mt-2 px-4 py-2 bg-[#0f172a] border border-[#2dd4bf]/40 rounded-md text-gray-200 focus:border-[#2dd4bf] focus:ring-2 focus:ring-[#2dd4bf] transition">
+    </label>
+
+    <label class="block mb-4">
+      <span class="text-[#2dd4bf] font-mono">$ email</span>
+      <input type="email" name="email" required 
+             class="w-full mt-2 px-4 py-2 bg-[#0f172a] border border-[#2dd4bf]/40 rounded-md text-gray-200 focus:border-[#2dd4bf] focus:ring-2 focus:ring-[#2dd4bf] transition">
+    </label>
+
+    <label class="block mb-6">
+      <span class="text-[#2dd4bf] font-mono">$ message</span>
+      <textarea name="message" rows="5" required
+                class="w-full mt-2 px-4 py-2 bg-[#0f172a] border border-[#2dd4bf]/40 rounded-md text-gray-200 focus:border-[#2dd4bf] focus:ring-2 focus:ring-[#2dd4bf] transition"></textarea>
+    </label>
+
+    <button type="submit"
+      class="w-full px-6 py-3 bg-[#2dd4bf] text-black font-bold rounded-md hover:bg-[#14b8a6] hover:shadow-[0_0_12px_#2dd4bf] transition">
+      $ send_message
+    </button>
+  </form>
+
+  <!-- Alt Contact -->
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6">
+    <a href="mailto:hafsa@example.com" 
+       class="px-6 py-3 bg-[#2dd4bf] text-black rounded-md font-bold hover:bg-[#14b8a6] hover:shadow-[0_0_12px_#2dd4bf] transition text-center">
+      $ email_me
+    </a>
+    <a href="https://github.com/yourgithub" target="_blank" 
+       class="px-6 py-3 border border-[#2dd4bf] text-[#2dd4bf] rounded-md font-bold hover:bg-[#2dd4bf] hover:text-black hover:shadow-[0_0_12px_#2dd4bf] transition text-center">
+      $ github
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-center py-4 border-t border-[#2dd4bf]/30 bg-[#111827] text-gray-500 text-xs sm:text-sm">
+    © 2025 Hafsa | Built with <span class="text-[#2dd4bf]">Tailwind CSS</span>
+  </footer>
+
+  <!-- JS for mobile menu -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
 </body>
 </html>
