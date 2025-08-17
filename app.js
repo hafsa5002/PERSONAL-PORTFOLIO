@@ -1,18 +1,24 @@
-const express =require('express');
-const app =express();
-const path =require('path')
+const express = require('express');
+const app = express();
+const path = require('path');
+require('dotenv').config();
 
-//middlewares for parisng data
-
+// Middleware
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.set('view engine','ejs');
+app.set('view engine', 'ejs');
 
+// Routes
+const messageRouter = require('./routes/messageRoute');
+app.use('/message', messageRouter);
 
-app.get('/',(req,res)=>{
-    res.render('portfolio')
-})
+// Render portfolio page
+app.get('/', (req, res) => {
+  res.render('portfolio', { sent: req.query.sent || null });
+});
 
-app.listen(3000)
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
