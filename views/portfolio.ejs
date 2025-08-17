@@ -16,25 +16,24 @@
 </head>
 <body class="bg-[#0f172a] text-gray-200 p-5">
   <!-- Navbar -->
+   <!-- Navbar -->
 <header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-[#2dd4bf]/30">
   <div class="max-w-6xl mx-auto px-4 flex items-center justify-between py-4">
-    <!-- Hero Logo Box -->
-  <!-- Navbar Logo -->
-<!-- Navbar Logo (Initial Only) -->
-<div class="text-[#2dd4bf] font-bold">
-  <a href="#hero" 
-     class="relative px-3 py-1 rounded-md bg-[#0f172a] border-2 border-[#2dd4bf] 
-            flex items-center font-mono font-extrabold text-base sm:text-lg
-            hover:scale-105 hover:drop-shadow-[0_0_15px_#2dd4bf] transition-all duration-300 cursor-pointer">
-    &lt;H/&gt;<span class="animate-pulse ml-1">|</span>
-  </a>
-</div>
 
-    <!-- <div class="text-[#2dd4bf] font-bold text-xl">{ LOGO }</div> -->
-    
+    <!-- Animated Navbar Logo -->
+    <div class="text-[#2dd4bf] font-bold text-xl relative">
+      <a href="#hero" class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16
+                          bg-[#0f172a] border-4 border-[#2dd4bf] rounded-full font-mono text-lg sm:text-xl md:text-2xl
+                          drop-shadow-[0_0_10px_#2dd4bf] hover:scale-110 hover:drop-shadow-[0_0_20px_#2dd4bf] 
+                          transition-all duration-500 relative">
+        &lt;H/&gt;
+        <span class="absolute bottom-0 right-0 w-2 h-2 bg-[#2dd4bf] rounded-full animate-ping-slow"></span>
+      </a>
+    </div>
+
     <!-- Desktop menu -->
     <ul class="hidden md:flex space-x-8 font-semibold text-[#2dd4bf] tracking-wide text-lg">
-      <li><a href="#about" class="relative group">ABOUT<span class="absolute opacity-0 group-hover:opacity-100 ml-1 text-[#2dd4bf] cursor-blink">█</span></a></li>
+      <li><a href="#about" class="relative group">ABOUT<span class="absolute opacity-0 group-hover:opacity-100 ml-1 text-[#2dd4bf] animate-blink">█</span></a></li>
       <li><a href="#skills" class="relative group">&lt; SKILLS /&gt;
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#2dd4bf] transition-all duration-300 group-hover:w-full"></span>
       </a></li>
@@ -55,129 +54,211 @@
   </div>
 </header>
 
-<!-- Hero Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 2main -->
-<main class="flex flex-col md:flex-row justify-evenly items-center min-h-screen px-6 md:px-12 lg:px-20">
-  <!-- Logo -->
- 
- <!-- Hero Logo Box -->
-<div class="relative h-32 w-32 sm:h-48 sm:w-48 md:h-64 md:w-64 mb-8 md:mb-0">
-  
-  <!-- Glow background -->
-  <div class="absolute inset-0 rounded-full bg-[#2dd4bf] blur-3xl opacity-20 animate-pulse"></div>
-
-  <!-- Logo -->
-  <a href="#hero" class="relative z-10 rounded-full bg-[#0f172a] border-4 border-[#2dd4bf] 
-                       h-full w-full flex items-center justify-center font-mono font-extrabold 
-                       text-5xl text-[#2dd4bf] drop-shadow-[0_0_15px_#2dd4bf] 
-                       hover:scale-105 hover:drop-shadow-[0_0_25px_#2dd4bf] transition-all duration-300 cursor-pointer">
-    &lt;H/&gt;<span class="animate-pulse ml-1">|</span>
-  </a>
-</div>
-
-
-
-
-  <!-- Text -->
-  <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 justify-center text-center md:text-left">
-    <div class="text-base sm:text-lg text-[#2dd4bf] font-mono animate-fade-in-left">
-      &gt; Hi, my name is <span class="animate-blink">█</span>
-    </div>
-    <div class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white animate-fade-in-up delay-200">HAFSA</div>
-    <div class="text-lg sm:text-2xl md:text-3xl font-bold text-[#2dd4bf] animate-fade-in-up delay-500">Web Developer & Builder of Things</div>
-    <p class="text-gray-400 leading-relaxed text-sm sm:text-base md:text-lg border-l-2 border-[#2dd4bf] pl-4 animate-fade-in-up delay-700">
-      I create modern, responsive, and user-friendly web applications using 
-      the latest technologies. Passionate about building seamless user 
-      experiences and scalable backend systems.
-    </p>
-    <!-- <a href="#projects" 
-      class="mt-4 inline-block px-6 py-3 rounded-lg bg-[#2dd4bf] text-black font-bold hover:bg-[#14b8a6] hover:shadow-[0_0_10px_#2dd4bf] transition relative group animate-fade-in-up delay-1000">
-      [ $ view_projects ]
-      <span class="absolute opacity-0 group-hover:opacity-100 ml-1 animate-blink">█</span>
-    </a> -->
-<a href="#projects"
-   class="relative mt-6 inline-flex items-center justify-center px-8 py-3 font-mono font-semibold text-[#0f172a] bg-[#2dd4bf] rounded-full
-          overflow-hidden group shadow-lg
-          hover:bg-[#14b8a6] hover:text-white hover:shadow-[0_0_20px_#2dd4bf]
-          transition-all duration-300 ease-in-out">
-  <span class="absolute inset-0 bg-gradient-to-r from-[#2dd4bf] to-[#14b8a6] opacity-20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
-  <span class="relative z-10">[ $ View Projects ]</span>
-  <span class="ml-2 animate-pulse relative z-10">█</span>
-</a>
-
-
-  </div>
-</main>
-
 <!-- Tailwind Custom Animations -->
 <style>
   @layer utilities {
-    @keyframes fade-in-up {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fade-in-left {
-      0% { opacity: 0; transform: translateX(-20px); }
-      100% { opacity: 1; transform: translateX(0); }
+    @keyframes ping-slow {
+      0% { transform: scale(0.6); opacity: 0.7; }
+      50% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(0.6); opacity: 0.7; }
     }
     @keyframes blink {
       0%, 50%, 100% { opacity: 1; }
       25%, 75% { opacity: 0; }
     }
 
-    .animate-fade-in-up {
-      animation: fade-in-up 1s ease-out forwards;
-    }
-    .animate-fade-in-left {
-      animation: fade-in-left 1s ease-out forwards;
+    .animate-ping-slow {
+      animation: ping-slow 2s infinite;
     }
     .animate-blink {
       animation: blink 1s step-start infinite;
     }
-    .delay-200 { animation-delay: 0.2s; }
-    .delay-500 { animation-delay: 0.5s; }
-    .delay-700 { animation-delay: 0.7s; }
-    .delay-1000 { animation-delay: 1s; }
   }
 </style>
+
+<!-- Optional JS for Mobile Menu -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- Hero Section with Animated Laptop Typing -->
+<!-- Hero Section: Animated Laptop Single-Line Terminal -->
+<main class="flex flex-col md:flex-row justify-evenly items-center min-h-screen px-6 md:px-12 lg:px-20">
+
+  <!-- Animated Laptop -->
+  <div class="relative w-64 h-48 sm:w-80 sm:h-56 md:w-96 md:h-64 mb-8 md:mb-0 mx-auto laptop-hover">
+    <!-- Glow background -->
+    <div class="absolute inset-0 rounded-lg bg-[#2dd4bf] blur-2xl opacity-20 animate-pulse"></div>
+
+    <!-- Laptop body -->
+    <div class="relative w-full h-full bg-[#0f172a] border-4 border-[#2dd4bf] rounded-lg shadow-xl flex flex-col justify-center items-center p-4">
+      
+      <!-- Screen (single-line terminal style) -->
+      <div class="w-full h-3/4 bg-[#111827] border-2 border-[#2dd4bf] rounded-sm p-3 flex items-center overflow-hidden text-[#2dd4bf] font-mono text-xs sm:text-sm md:text-base">
+        <span id="typed-code"></span><span id="cursor" class="animate-blink">█</span>
+      </div>
+
+      <!-- Keyboard -->
+      <div class="w-full h-6 mt-2 bg-[#0f172a] rounded-sm shadow-inner"></div>
+    </div>
+  </div>
+
+  <!-- Hero Text -->
+  <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 justify-center text-center md:text-left">
+    <div class="text-base sm:text-lg text-[#2dd4bf] font-mono animate-fade-in-left delay-100">
+      &gt; Hi, my name is <span class="animate-blink">█</span>
+    </div>
+    <div class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white animate-fade-in-up delay-300">HAFSA</div>
+    <div class="text-lg sm:text-2xl md:text-3xl font-bold text-[#2dd4bf] animate-fade-in-up delay-500">
+      Web Developer & Builder of Things
+    </div>
+    <p class="text-gray-400 leading-relaxed text-sm sm:text-base md:text-lg border-l-2 border-[#2dd4bf] pl-4 animate-fade-in-up delay-700">
+      I create modern, responsive, and user-friendly web applications using the latest technologies.
+    </p>
+    <a href="#projects"
+       class="relative mt-6 inline-flex items-center justify-center px-6 py-3 font-mono font-semibold text-[#0f172a] bg-[#2dd4bf] rounded-full
+              overflow-hidden group shadow-lg
+              hover:bg-[#14b8a6] hover:text-white hover:shadow-[0_0_20px_#2dd4bf]
+              transition-all duration-300 ease-in-out">
+      <span class="absolute inset-0 bg-gradient-to-r from-[#2dd4bf] to-[#14b8a6] opacity-20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+      <span class="relative z-10">[ $ View Projects ]</span>
+      <span class="ml-2 animate-pulse relative z-10">→</span>
+    </a>
+  </div>
+</main>
+
+<!-- Tailwind Custom Animations -->
+<style>
+@layer utilities {
+  @keyframes fade-in-up { 0% {opacity:0;transform:translateY(20px);} 100% {opacity:1;transform:translateY(0);} }
+  @keyframes fade-in-left { 0% {opacity:0;transform:translateX(-20px);} 100% {opacity:1;transform:translateX(0);} }
+  @keyframes blink { 0%,50%,100% {opacity:1;} 25%,75% {opacity:0;} }
+
+  .animate-fade-in-up { animation: fade-in-up 1s ease-out forwards; }
+  .animate-fade-in-left { animation: fade-in-left 1s ease-out forwards; }
+  .animate-blink { animation: blink 1s step-start infinite; }
+
+  .delay-100 { animation-delay:0.1s; }
+  .delay-200 { animation-delay:0.2s; }
+  .delay-300 { animation-delay:0.3s; }
+  .delay-500 { animation-delay:0.5s; }
+  .delay-700 { animation-delay:0.7s; }
+}
+
+.laptop-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #2dd4bf88;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+</style>
+
+<!-- Typed Code Animation (one line at a time, no scroll) -->
+<script>
+const codeLines = [
+  "const intro = \"Hi! I build websites that work everywhere.\";",
+  "const skill = \"I design modern, beautiful pages.\";",
+  "const backend = \"I make sure your apps run smoothly.\";",
+  "const deploy = \"I help your site go live online.\";",
+  "console.log(\"Let's create something amazing!\");"
+];
+
+const typedElement = document.getElementById('typed-code');
+const cursor = document.getElementById('cursor');
+
+let lineIndex = 0;
+let charIndex = 0;
+
+function typeLine() {
+  const line = codeLines[lineIndex];
+  if(charIndex < line.length){
+    typedElement.textContent += line[charIndex];
+    charIndex++;
+    setTimeout(typeLine, 50);
+  } else {
+    // show the line for 1s, then replace with next line
+    setTimeout(() => {
+      typedElement.textContent = ''; // clear previous line
+      lineIndex = (lineIndex + 1) % codeLines.length; // loop back
+      charIndex = 0;
+      typeLine();
+    }, 1000);
+  }
+}
+
+typeLine();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- here it strs -->
